@@ -55,10 +55,7 @@ def not_bad(s):
 def front_back(a, b):
     mid_a = (len(a) + 1) // 2
     mid_b = (len(b) + 1) // 2
-    if len(a) % 2 or (len(a) % 2 == 0 and len(b) % 2 == 0):
-        return a[:mid_a] + b[:mid_b] + a[mid_a:] + b[mid_b]
-    else:
-        return a[:mid_a] + b[:mid_b] + a[mid_a:] + b[mid_b:]
+    return a[:mid_a] + b[:mid_b] + a[mid_a:] + b[mid_b:]
 
 
 # Provided simple test() function used in main() to print
